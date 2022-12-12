@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>672</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralwidget{
+background-color: #d3e1f7;
+}</string>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>40</y>
+      <width>641</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="question_page">
+     <widget class="QFrame" name="questions_frame">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>581</width>
+        <height>571</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#questions_frame{
+background-color: #eaf4ff;
+border: 0px solid #eaf4ff;
+border-radius: 45px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>30</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>30</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="pic_label">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>230</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>230</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="question">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>110</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+color: #6d7b94;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="answer">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>55</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>65</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 26pt &quot;Bahnschrift&quot;;
+color: #a5b4c9;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QLabel" name="record_label">
+         <property name="minimumSize">
+          <size>
+           <width>128</width>
+           <height>128</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>128</width>
+           <height>128</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="answers_page">
+     <widget class="QFrame" name="answer_frame">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>581</width>
+        <height>571</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#answer_frame{
+background-color: #eaf4ff;
+border: 0px solid #eaf4ff;
+border-radius: 45px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="leftMargin">
+           <number>80</number>
+          </property>
+          <property name="rightMargin">
+           <number>80</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_2">
+            <property name="styleSheet">
+             <string notr="true">QFrame#frame_2{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0.29 #6d97ff, stop:0.30 #d3e1f7);
+border: 0px solid #d3e1f7;
+border-radius: 10px;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>Bahar nezlesi</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="bahar">
+               <property name="styleSheet">
+                <string notr="true">
+letter-spacing: 2px;
+font: 26pt &quot;Bahnschrift&quot;;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>%20</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_3">
+            <property name="styleSheet">
+             <string notr="true">QFrame#frame_3{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.5, x2:1, y2:0.5, stop:0.89 #6d97ff, stop:0.90 #d3e1f7);
+border: 0px solid #d3e1f7;
+border-radius: 10px;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>Bel fıtığı</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="bel">
+               <property name="styleSheet">
+                <string notr="true">
+letter-spacing: 2px;
+font: 26pt &quot;Bahnschrift&quot;;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>%80</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>Boyun fıtığı</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="boy">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>80%</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_5">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>Enfeksiyon</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="enf">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>80%</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_6">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>Covid -19</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="covid">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>80%</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_7">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>Kanser başlangıcı</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="kanser">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>80%</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_8">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>Grip</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="grip">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>80%</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_9">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>Obezite</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="obezite">
+               <property name="styleSheet">
+                <string notr="true">font: 22pt &quot;Bahnschrift&quot;;
+letter-spacing: 2px;
+color: #eaf4ff;</string>
+               </property>
+               <property name="text">
+                <string>80%</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
